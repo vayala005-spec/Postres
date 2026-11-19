@@ -18,7 +18,7 @@
 <body>
    <!--===========ENCABEZADO DE LA PÁGINA=============-->
    <header class="header-Valirio">
-     <div class="container header-inicio">
+     <div class="container header-inicio"> 
         <a href="#inicio" class="logo-valirio">
             <img src="IMG/logo.png" alt="logo-valirio">
         </a>    
@@ -40,9 +40,6 @@
 
      </div>
 
-
-
-
     
    </header>
 <!--============= CONTENIDO PRINCIPAL ===============-->
@@ -50,35 +47,140 @@
 
 
 <!--============= SECCIÓN DEL HERO ===============-->
-<section id="inicio" class="hero">
-      <div class="container hero-inicio">
-        <div class="hero-text">
-          <p class="eyebrow">Cada momento lindo de la vida tiene un postre involucrado</p>
-          <h1>Valirio</h1>
-          <p class="lead">Promociona tus productos, recibe pedidos y haz que tus clientes te encuentren desde cualquier lugar.</p>
+<section class="intro" aria-labelledby="intro-title">
+      <p class="intro-eyebrow">BIENVENIDOS A VALIRIO </p>
+      <h1 class="intro-title" id="intro-title">DULCES.<br><span>RECUERDOS</span></h1>
+      <p class="intro-description">Una marca que te ayuda a acompañar los momentos unicos de la vida con algo dulce </p>
+    </section>
+
+    <!-- ======= AQUI VAMOS A COLOCAR EL VIDEO -->
+     <!-- Galería principal: un video y dos imágenes -->
+    <section class="gallery" id="galeria" aria-label="Galería principal">
 
 
-          <div class="hero-actions">
-            <a href="#productos" class="btn primary">Ver productos</a>
-            <button type="button" class="btn outline" onclick="openWhatsApp('Hola, vi su página y me gustaría conocer sus regalos personalizados.')">Comprar por WhatsApp</button>
-          </div>
+      <!-- VIDEO -->
+      <article class="media-card media-cardvideo" data-video-card>
+        <!-- Sustituye el archivo de video por el tuyo. Se recomienda MP4  -->
+        <video
+          class="media-card media-card-video"
+          data-hover-video
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="IMG/giro 1.mp4"
+          aria-label="Video de presentación">
+          <source src="IMG/giro 1.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
 
 
-          <p class="trust"><i data-lucide="heart"></i> Más de 200 detalles entregados</p>
+        <!-- Capa oscura que permite leer el texto sobre el video -->
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <!-- Texto que aparece sobre el panel -->
+        <div class="media-card__content">
+          <p class="media-card__number"> VALIRIO</p>
+          <h2 class="media-card__title">MOMENTOS <br>DULCES </h2>
+          <a class="media-card__link" href="#contacto">CONOCER MÁS<span aria-hidden="true">↗</span></a>
         </div>
 
 
-        <div class="hero-imagen">
-          <img src="XXX" alt="XXXXX">
-          <span class="tag tag-love">Hecho con cariño</span>
-          <span class="tag tag-custom">Pedidos personalizados</span>
+        <!-- Control visible en pantallas táctiles y accesible con teclado -->
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
+          <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
+          <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
+        </button>
+      </article>
+
+
+      <!--  video 2-->
+      <article class="media-card">
+        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
+         <video
+          class="media-card media-card-video"
+          data-hover-video
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="IMG/giro 2.mp4"
+          aria-label="Video de presentación">
+          <source src="IMG/giro 2.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+
+
+        <!-- Capa oscura que permite leer el texto sobre el video -->
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <!-- Texto que aparece sobre el panel -->
+        <div class="media-card__content">
+          <p class="media-card__number"> PRUEBA</p>
+          <h2 class="media-card__title">YURI <br>DULCES </h2>
+          <a class="media-card__link" href="#contacto">CONOCER MÁS<span aria-hidden="true">↗</span></a>
         </div>
-      </div>
+
+
+        <!-- Control visible en pantallas táctiles y accesible con teclado -->
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
+          <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
+          <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
+        </button>
+
+      </article>
+
+
+      <!--  Video 3-->
+      <article class="media-card">
+        <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
+        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
+         <video
+          class="media-card media-card-video"
+          data-hover-video
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="IMG/giro 3.mp4"
+          aria-label="Video de presentación">
+          <source src="IMG/giro 3.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+
+
+        <!-- Capa oscura que permite leer el texto sobre el video -->
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <!-- Texto que aparece sobre el panel -->
+        <div class="media-card__content">
+          <p class="media-card__number"> PRUEBA2</p>
+          <h2 class="media-card__title">YURI2 <br>DULCES </h2>
+          <a class="media-card__link" href="#contacto">CONOCER MÁS<span aria-hidden="true">↗</span></a>
+        </div>
+
+
+        <!-- Control visible en pantallas táctiles y accesible con teclado -->
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
+          <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
+          <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
+        </button>
+      </article>
+
+
     </section>
 
 
-
 </main>
+<!--======== ESTE ES EL FOOTER =========-->
+ <!-- Pie de página -->
+  <footer class="site-footer">
+    <p>© <span id="current-year"></span> Valirio. Todos los derechos reservados.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
 
 
 
